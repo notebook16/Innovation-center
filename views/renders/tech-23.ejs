@@ -1,0 +1,59 @@
+<% layout("/layouts/boilerplate") %>
+
+
+
+<H2 style="color:darkorange ; font-family: sans-serif; font-weight: 200; text-align: center;"  class="text-heading" >TECHNOVANZA 2023</H2>
+
+      
+<div class="gallery">
+    <% for (let i = 1; i <= 13; i++) { %>
+        <a href="#img-popup-<%= i %>" class="gallery-image">
+            <img src="/images/2023/p<%= i %>.jpeg" alt="" class="image">
+        </a>
+        <!-- Hidden Popup Section for Each Image -->
+        <div id="img-popup-<%= i %>" class="image-popup">
+            <a href="#" class="close-popup">&times;</a>
+            <img src="/images/2023/p<%= i %>.jpeg" class="large-popup-image" alt="Large Image">
+        </div>
+    <% } %>
+
+    <% for (let i = 1; i <= 3; i++) { %>
+        <a href="#img-popup-i<%= i %>" class="gallery-image">
+            <img src="/images/2023/i<%= i %>.jpeg" alt="" class="image">
+        </a>
+        <div id="img-popup-i<%= i %>" class="image-popup">
+            <a href="#" class="close-popup">&times;</a>
+            <img src="/images/2023/i<%= i %>.jpeg" class="large-popup-image" alt="Large Image">
+        </div>
+    <% } %>
+
+    <% for (let i = 1; i <= 9; i++) { %>
+        <a href="#img-popup-t<%= i %>" class="gallery-image">
+            <img src="/images/2023/t<%= i %>.jpeg" alt="" class="image">
+        </a>
+        <div id="img-popup-t<%= i %>" class="image-popup">
+            <a href="#" class="close-popup">&times;</a>
+            <img src="/images/2023/t<%= i %>.jpeg" class="large-popup-image" alt="Large Image">
+        </div>
+    <% } %>
+</div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
