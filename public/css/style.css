@@ -90,6 +90,7 @@
   text-decoration: none;
   font-family: 'Arial', sans-serif; 
   font-size: 16px;
+  border-radius: 20px;
 }
 
 .nav-item a:hover {
@@ -192,12 +193,77 @@
       cursor: pointer;
       color: white;
   }
+
+  .up-txt{
+    margin-top: 25rem;
+  }
+
+
+  
+ 
 }
+
+
+.proposal-form {
+  text-align: center;
+  margin-top: 4rem;
+
+}
+
+.form-iframe {
+  width: 50vw;
+  height: 82vh;
+  max-width: 640px; /* Original width of the iframe */
+  margin: 0 auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .form-iframe {
+    margin-top: 12%;
+    width: 90%; /* Shrink width for mobile view */
+    height: 82vh; /* Adjust height proportionally */
+
+  }
+}
+
+
+
+
+.proposal-img {
+  width: 100%;
+  height: auto; /* Default to keep the aspect ratio */
+}
+
+@media (max-width: 768px) {
+  .proposal-img {
+    height: 5rem; /* Adjust this value for mobile view */
+    object-fit: cover; /* Ensures the image scales without distorting */
+  }
+}
+
 
 @media only screen and (min-width: 769px) {
   .Mobile {
       display: none; /* Hide mobile sidebar on desktop */
   }
+
+  .logo-mobile{
+    display: none;
+  }
+
+  .menu-icon{
+    display: none;
+  }
+
+  .up-txt-mobile{
+    padding-top: 25%;
+  }
+
+  .up-txt-mobile{
+    margin-top: 55vh;;
+  }
+  
 }
 
 
@@ -274,23 +340,15 @@ html {
     scroll-behavior: smooth;
 }
 
-#about {
-    height: 50vh;
+/* #about {
+    height: 15rem !important;
 
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 24px;
     color: #ffffff;
-}
-
-.about2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-    color: #ffffff;
-}
+} */
 
 .card{
     height: 55rem;
@@ -320,7 +378,7 @@ html {
 
 .up-txt{
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 2.7rem;
 }
 
 .up-txt h1 {
@@ -344,12 +402,15 @@ html {
   top: 0;  
    height: auto;
   width: 13%; 
-  margin-top: 1rem;
+  margin-top: 0.7rem;
   margin-left: 1rem;
   size: 1rem;
   z-index: 2;
 }
 
+.logo-desk{
+  margin-left: 0%;
+}
 .main-im{
   padding-top: 12%;
 }
