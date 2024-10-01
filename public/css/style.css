@@ -1396,6 +1396,11 @@ html, body {
   z-index: 1; /* Higher z-index to stack above the full-screen */
 }
 
+.footer-m{
+ /* Navbar appears over the full-screen div */
+  z-index: -2;
+  
+}
 
 /* Make sure other elements stack above the full-screen */
 @media (max-width: 768px) {

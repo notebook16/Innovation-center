@@ -70,47 +70,47 @@
 
 //root route
 app.get('/', (req, res) => {
-    res.render("renders/index.ejs");
+    res.render("renders/index.ejs" , { showFooter: false });
 });
 
 //home route
 app.get('/home', (req, res) => {
-    res.render("renders/index.ejs");
+    res.render("renders/index.ejs" , { showFooter: false });
 });
 
 
 //repo route
 app.get("/Repository", (req,res) => {
-    res.render("renders/repo.ejs")
+    res.render("renders/repo.ejs", { showFooter: true})
 });
 
 //gallery route
 app.get("/gallery" , (req,res) => {
-    res.render("renders/gallery.ejs")
+    res.render("renders/gallery.ejs" , { showFooter: true})
 })
 
 //proposal route
 app.get("/proposal" , (req,res) => {
-    res.render("renders/proposal.ejs")
+    res.render("renders/proposal.ejs" , { showFooter: true})
 })
 
 //about route
 app.get("/about" , (req,res) => {
-    res.render("renders/about.ejs")
+    res.render("renders/about.ejs", { showFooter: true})
 })
 
 //feedback route
 app.get("/feedback" ,(req,res) => {
-    res.render("renders/feedback.ejs")
+    res.render("renders/feedback.ejs" , { showFooter: true})
 })
 
 
 app.get("/gallery/tech-23" ,(req,res) => {
-    res.render("renders/tech-23.ejs")
+    res.render("renders/tech-23.ejs" , { showFooter: true})
 })
 
 app.get("/gallery/tech-24" ,(req,res) => {
-    res.render("renders/tech-24.ejs")
+    res.render("renders/tech-24.ejs" , { showFooter: true})
 })
 
 
