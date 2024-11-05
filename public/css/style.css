@@ -671,26 +671,6 @@ html {
   justify-content: center;
 }
 
-/*
-.gallery-image {
-  width: calc(33.333% - 10px); 
-  height: 200px;
-  overflow: hidden;
-  position: relative;
-  cursor: pointer;
-}
-
-.gallery-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.gallery-image img:hover {
-  transform: scale(5.5); 
-}   */
-
 
 
 /* Gallery Image Styling */
@@ -909,12 +889,6 @@ html {
 }  
 
 
-/* .full-screen{
-  width: 100vw;
-  height: 100vh;
-  padding: auto;
-  z-index: 1;
-} */
 
 
 .carouseli{
@@ -1126,7 +1100,7 @@ html {
   z-index: 1000;
   width: 0%;
   height: 4px;
-  background-color: #14ff72cb;
+  background-color: #8c00ff;
   left: 0;
   top: 0;
   animation: runningTime 7s linear 1 forwards;
